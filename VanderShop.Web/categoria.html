@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova categoria | VanderShop</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/categoria.js"></script>
+</head>
+<body>
+  <header class="cabecalho"><div class="cabecalho-conteudo">
+    <a class="marca" href="index.html">vander<span>Shop</span></a><span class="identificacao">Catálogo</span>
+  </div></header>
+  <main class="container formulario-container">
+    <p class="sobretitulo">CATEGORIAS</p><h1>Nova categoria</h1>
+    <p class="muted">Uma categoria ajuda seus clientes a encontrar o que procuram.</p>
+    <p id="mensagem" class="mensagem" role="status" hidden></p>
+    <form id="form-categoria" class="card formulario">
+      <fieldset id="campos">
+        <div class="campo"><label for="nome">Nome da categoria</label>
+          <input id="nome" name="Categoria" required minlength="2" maxlength="60" autocomplete="off"></div>
+        <div class="rodape-formulario">
+          <button type="button" class="botao secundario" data-voltar>Cancelar</button>
+          <button type="submit" class="botao">Cadastrar</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

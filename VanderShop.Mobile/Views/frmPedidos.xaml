@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:VanderShop.Models"
+    x:Class="VanderShop.Views.frmPedidos"
+    Title="Meus pedidos"
+    SafeAreaEdges="Container"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+
+        <Grid
+            Padding="20,16,20,24"
+            BackgroundColor="{StaticResource ShopYellow}"
+            RowDefinitions="Auto,Auto,Auto"
+            RowSpacing="10">
+
+            <Grid ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="VanderShop"
+                    FontFamily="OpenSansSemibold"
+                    FontSize="25"
+                    VerticalOptions="Center" />
+
+                <Button
+                    x:Name="btnSair"
+                    Grid.Column="1"
+                    Text="Sair"
+                    Style="{StaticResource ShopQuiet}"
+                    IsVisible="False"
+                    Clicked="Sair_Clicked" />
+
+            </Grid>
+
+            <Label
+                x:Name="lblUsuario"
+                Grid.Row="1"
+                FontSize="13" />
+
+            <Grid
+                Grid.Row="2"
+                RowDefinitions="Auto,Auto"
+                RowSpacing="4">
+
+                <Label
+                    Text="Meus pedidos"
+                    Style="{StaticResource ShopTitle}" />
+
+                <Label
+                    Grid.Row="1"
+                    Text="Suas compras, organizadas em um só lugar." />
+
+            </Grid>
+
+        </Grid>
+
+
+        <RefreshView
+            x:Name="refreshPedidos"
+            Grid.Row="1"
+            RefreshColor="{StaticResource ShopBlue}"
+            Refreshing="Pedidos_Refreshing">
+
+            <CollectionView
+                x:Name="listaPedidos"
+                Margin="20,18"
+                SelectionMode="None">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        Orientation="Vertical"
+                        ItemSpacing="14" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.EmptyView>
+
+                    <Grid Padding="16">
+
+                        <Grid
+                            VerticalOptions="Center"
+                            RowDefinitions="Auto,Auto,Auto"
+                            RowSpacing="16">
+
+                            <Border
+                                WidthRequest="88"
+                                HeightRequest="88"
+                                HorizontalOptions="Center"
+                                BackgroundColor="{StaticResource ShopBlueSoft}"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 28">
+
+                                <Path
+                                    Style="{StaticResource ShopIcon}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    Data="M5,7 L19,7 L21,22 L3,22 Z M8,8 L8,5 A4,4 0 0 1 16,5 L16,8" />
+
+                            </Border>
+
+                            <Label
+                                Grid.Row="1"
+                                Text="Nenhum pedido encontrado"
+                                Style="{StaticResource ShopSection}"
+                                HorizontalTextAlignment="Center" />
+
+                            <Label
+                                Grid.Row="2"
+                                Text="Sua próxima compra começa aqui. Toque em Novo Pedido para escolher seus produtos."
+                                Style="{StaticResource ShopMuted}"
+                                HorizontalTextAlignment="Center" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="models:Pedidos">
+
+                        <Border Style="{StaticResource ShopCard}">
+
+                            <Grid
+                                RowDefinitions="Auto,Auto,Auto,Auto"
+                                RowSpacing="14">
+
+                                <Grid
+                                    ColumnDefinitions="44,*"
+                                    ColumnSpacing="12">
+
+                                    <Border
+                                        BackgroundColor="{StaticResource ShopBlueSoft}"
+                                        StrokeThickness="0"
+                                        StrokeShape="RoundRectangle 12">
+
+                                        <Path
+                                            Style="{StaticResource ShopIcon}"
+                                            WidthRequest="23"
+                                            HeightRequest="23"
+                                            Data="M5,2 L19,2 L19,22 L16,20 L12,22 L8,20 L5,22 Z M8,7 L16,7 M8,11 L16,11 M8,15 L13,15" />
+
+                                    </Border>
+
+                                    <Grid
+                                        Grid.Column="1"
+                                        RowDefinitions="Auto,Auto"
+                                        RowSpacing="3">
+
+                                        <Label
+                                            Text="{Binding Titulo}"
+                                            Style="{StaticResource ShopSection}" />
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Text="{Binding DataHoraTexto}"
+                                            Style="{StaticResource ShopMuted}" />
+
+                                    </Grid>
+
+                                </Grid>
+
+                                <Border
+                                    Grid.Row="1"
+                                    Style="{StaticResource ShopStatusBadge}">
+
+                                    <Label
+                                        Text="{Binding Status}"
+                                        Style="{StaticResource ShopStatusText}" />
+
+                                </Border>
+
+                                <Grid
+                                    Grid.Row="2"
+                                    ColumnDefinitions="*,Auto"
+                                    ColumnSpacing="12">
+
+                                    <Label
+                                        Text="Total da compra"
+                                        Style="{StaticResource ShopMuted}"
+                                        VerticalOptions="Center" />
+
+                                    <Label
+                                        Grid.Column="1"
+                                        Text="{Binding TotalTexto}"
+                                        FontFamily="OpenSansSemibold"
+                                        FontSize="22" />
+
+                                </Grid>
+
+                                <Button
+                                    Grid.Row="3"
+                                    Text="Ver detalhes"
+                                    Style="{StaticResource ShopSecondary}"
+                                    Clicked="Detalhes_Clicked" />
+
+                            </Grid>
+
+                        </Border>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </RefreshView>
+
+        <Border
+            Grid.Row="2"
+            Padding="20,14"
+            BackgroundColor="White"
+            Stroke="{StaticResource ShopLine}"
+            StrokeThickness="1">
+
+            <Button
+                x:Name="btnNovoPedido"
+                Text="Novo Pedido"
+                IsEnabled="False"
+                Clicked="NovoPedido_Clicked" />
+
+        </Border>
+
+    </Grid>
+
+</ContentPage>

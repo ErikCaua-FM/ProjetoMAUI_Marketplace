@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto | VanderShop</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/produto.js"></script>
+</head>
+<body>
+  <header class="cabecalho"><div class="cabecalho-conteudo">
+    <a class="marca" href="index.html">vander<span>Shop</span></a><span class="identificacao">Catálogo</span>
+  </div></header>
+  <main class="container formulario-container">
+    <p class="sobretitulo">PRODUTOS</p>
+    <h1 id="titulo-pagina">Novo produto</h1>
+    <p class="muted">Preencha as informações que seus clientes vão encontrar.</p>
+    <p id="mensagem" class="mensagem" role="status" hidden></p>
+    <form id="form-produto" class="card formulario">
+      <fieldset id="campos" disabled>
+        <div class="campo"><label for="nome">Nome do produto</label>
+          <input id="nome" name="Produto" required minlength="2" maxlength="100" autocomplete="off"></div>
+        <div class="campo"><label for="categoria">Categoria</label>
+          <div class="categoria-linha">
+            <select id="categoria" name="CategoriaId" required><option value="">Selecione uma categoria</option></select>
+            <button id="nova-categoria" type="button" class="botao secundario">Nova Categoria</button>
+          </div>
+        </div>
+        <div class="campo"><label for="preco">Preço unitário (R$)</label>
+          <input id="preco" name="Preco" type="text" inputmode="decimal" placeholder="49,90" required maxlength="16">
+          <small class="muted">Informe o valor sem separador de milhar. Exemplo: 1299,90.</small></div>
+        <div class="campo"><label for="descricao">Descrição</label>
+          <textarea id="descricao" name="Descricao" rows="4" maxlength="2000" required></textarea></div>
+        <label class="checkbox"><input id="ativo" name="Ativo" type="checkbox" checked>Produto ativo no catálogo</label>
+        <div class="rodape-formulario">
+          <button type="button" class="botao secundario" data-voltar>Cancelar</button>
+          <button id="salvar" type="submit" class="botao">Cadastrar</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

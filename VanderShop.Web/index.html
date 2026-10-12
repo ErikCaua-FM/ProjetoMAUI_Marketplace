@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administração | VanderShop</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/painel.js"></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a class="marca" href="index.html">vander<span>Shop</span></a>
+      <span class="identificacao">Administração</span>
+    </div>
+  </header>
+  <main class="container">
+    <div class="apresentacao">
+      <div><p class="sobretitulo">SUA LOJA</p><h1>Painel de administração</h1>
+        <p class="muted">Gerencie seu catálogo e acompanhe cada pedido.</p></div>
+      <button
+  id="sair"
+  type="button"
+  class="botao secundario"
+>
+  Sair
+</button>
+    </div>
+    <p id="mensagem" class="mensagem" role="status" hidden></p>
+    <div class="painel-grid">
+      <section class="card" aria-labelledby="titulo-produtos">
+        <div class="card-cabecalho">
+          <div><h2 id="titulo-produtos">Produtos <span id="total-produtos" class="contador">0</span></h2>
+            <p class="muted">Organize os produtos da sua loja.</p></div>
+          <button id="incluir-produto" type="button" class="botao">+ Incluir</button>
+        </div>
+        <div class="pesquisa">
+          <label for="pesquisa-produtos">Pesquisar produtos</label>
+          <input id="pesquisa-produtos" type="search" placeholder="Nome do produto ou categoria" autocomplete="off">
+        </div>
+        <div class="tabela-container">
+          <table>
+            <caption class="sr-only">Produtos cadastrados</caption>
+            <thead><tr><th scope="col">Produto</th><th scope="col">Categoria</th>
+              <th scope="col" class="numero">Preço</th><th scope="col" class="acoes-coluna">Ações</th></tr></thead>
+            <tbody id="lista-produtos"></tbody>
+          </table>
+        </div>
+        <p id="vazio-produtos" class="vazio" hidden>Nenhum produto encontrado.</p>
+      </section>
+      <section class="card" aria-labelledby="titulo-pedidos">
+        <div class="card-cabecalho">
+          <div><h2 id="titulo-pedidos">Pedidos <span id="total-pedidos" class="contador">0</span></h2>
+            <p class="muted">Do primeiro clique à entrega.</p></div>
+          <span class="etiqueta">Todos os clientes</span>
+        </div>
+        <div class="pesquisa">
+          <label for="pesquisa-pedidos">Pesquisar pedidos</label>
+          <input id="pesquisa-pedidos" type="search" placeholder="Número, cliente ou status" autocomplete="off">
+        </div>
+        <div class="tabela-container">
+          <table>
+            <caption class="sr-only">Pedidos dos clientes</caption>
+            <thead><tr><th scope="col">Pedido</th><th scope="col">Cliente</th>
+              <th scope="col">Status</th><th scope="col" class="acoes-coluna">Ações</th></tr></thead>
+            <tbody id="lista-pedidos"></tbody>
+          </table>
+        </div>
+        <p id="vazio-pedidos" class="vazio" hidden>Nenhum pedido encontrado.</p>
+      </section>
+    </div>
+  </main>
+  <dialog id="confirmacao-exclusao" aria-labelledby="titulo-exclusao">
+    <h2 id="titulo-exclusao">Deseja realmente excluir o Produto?</h2>
+    <p id="nome-exclusao" class="muted"></p>
+    <div class="rodape-formulario">
+      <button id="cancelar-exclusao" type="button" class="botao secundario" autofocus>Não</button>
+      <button id="confirmar-exclusao" type="button" class="botao perigo">Sim</button>
+    </div>
+  </dialog>
+</body>
+</html>

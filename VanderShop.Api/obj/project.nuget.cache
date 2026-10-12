@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jir0pYHSFNg=",
+  "success": true,
+  "projectFilePath": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Api\\VanderShop.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erikc\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
+    "C:\\Users\\erikc\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

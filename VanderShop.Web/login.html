@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Entrar | VanderShop</title>
+
+  <link
+    rel="stylesheet"
+    href="css/estilos.css"
+  >
+
+  <script
+    type="module"
+    src="js/login.js"
+  ></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <span class="marca">
+        vander<span>Shop</span>
+      </span>
+
+      <span class="identificacao">
+        Administração
+      </span>
+    </div>
+  </header>
+
+  <main class="container container-login">
+    <section class="card formulario-card">
+      <h1>Acesse sua loja</h1>
+
+      <p class="muted">
+        Entre para gerenciar produtos e acompanhar pedidos.
+      </p>
+
+      <p
+        id="mensagem"
+        class="mensagem"
+        role="status"
+        hidden
+      ></p>
+
+      <form id="form-login">
+        <fieldset id="campos">
+          <div class="campo">
+            <label for="email">E-mail</label>
+
+            <input
+              id="email"
+              type="email"
+              autocomplete="username"
+              maxlength="150"
+              required
+            >
+          </div>
+
+          <div class="campo">
+            <label for="senha">Senha</label>
+
+            <input
+              id="senha"
+              type="password"
+              autocomplete="current-password"
+              maxlength="128"
+              required
+            >
+          </div>
+
+          <div class="rodape-formulario">
+            <button
+              class="botao"
+              type="submit"
+            >
+              Entrar
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

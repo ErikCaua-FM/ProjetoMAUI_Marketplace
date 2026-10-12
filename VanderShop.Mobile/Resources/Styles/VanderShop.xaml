@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- CORES -->
+
+    <Color x:Key="ShopYellow">#FFE600</Color>
+    <Color x:Key="ShopBlue">#2968C8</Color>
+    <Color x:Key="ShopBlueSoft">#EAF2FF</Color>
+
+    <Color x:Key="ShopBackground">#F3F5F8</Color>
+    <Color x:Key="ShopSurface">#FFFFFF</Color>
+    <Color x:Key="ShopInk">#1F2937</Color>
+    <Color x:Key="ShopMutedColor">#667085</Color>
+    <Color x:Key="ShopLine">#E1E7EF</Color>
+
+    <Color x:Key="ShopGreen">#147D49</Color>
+    <Color x:Key="ShopGreenSoft">#E8F6EE</Color>
+
+    <Color x:Key="ShopRed">#B42332</Color>
+    <Color x:Key="ShopRedSoft">#FDECEE</Color>
+
+    <!-- PÁGINAS -->
+
+    <Style
+        TargetType="ContentPage"
+        ApplyToDerivedTypes="True">
+
+        <Setter
+            Property="BackgroundColor"
+            Value="{StaticResource ShopBackground}" />
+
+    </Style>
+
+    <!-- TEXTOS -->
+
+    <Style
+        x:Key="ShopLabel"
+        TargetType="Label">
+
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="{StaticResource ShopInk}" />
+        <Setter Property="LineBreakMode" Value="WordWrap" />
+
+    </Style>
+
+    <Style
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}" />
+
+    <Style
+        x:Key="ShopTitle"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="FontSize" Value="28" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopSection"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="FontSize" Value="19" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopMuted"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="TextColor" Value="{StaticResource ShopMutedColor}" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopFieldLabel"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopLink"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="TextColor" Value="{StaticResource ShopBlue}" />
+        <Setter Property="TextDecorations" Value="Underline" />
+        <Setter Property="MinimumHeightRequest" Value="44" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+
+    </Style>
+
+    <!-- BOTÕES -->
+
+    <Style
+        x:Key="ShopPrimary"
+        TargetType="Button">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource ShopBlue}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="CornerRadius" Value="14" />
+        <Setter Property="MinimumHeightRequest" Value="50" />
+        <Setter Property="Padding" Value="18,12" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="TextTransform" Value="None" />
+
+        <Setter Property="VisualStateManager.VisualStateGroups">
+
+            <VisualStateGroupList>
+
+                <VisualStateGroup x:Name="CommonStates">
+
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Opacity" Value="1" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Opacity" Value="0.8" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState x:Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="Opacity" Value="0.45" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                </VisualStateGroup>
+
+            </VisualStateGroupList>
+
+        </Setter>
+
+    </Style>
+
+    <Style
+        TargetType="Button"
+        BasedOn="{StaticResource ShopPrimary}" />
+
+    <Style
+        x:Key="ShopSecondary"
+        TargetType="Button"
+        BasedOn="{StaticResource ShopPrimary}">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource ShopBlueSoft}" />
+        <Setter Property="TextColor" Value="{StaticResource ShopBlue}" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopQuiet"
+        TargetType="Button"
+        BasedOn="{StaticResource ShopPrimary}">
+
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="{StaticResource ShopInk}" />
+        <Setter Property="Padding" Value="12,8" />
+        <Setter Property="MinimumHeightRequest" Value="44" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopCounter"
+        TargetType="Button"
+        BasedOn="{StaticResource ShopSecondary}">
+
+        <Setter Property="WidthRequest" Value="44" />
+        <Setter Property="MinimumHeightRequest" Value="44" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="CornerRadius" Value="12" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopRemove"
+        TargetType="Button"
+        BasedOn="{StaticResource ShopPrimary}">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource ShopRedSoft}" />
+        <Setter Property="TextColor" Value="{StaticResource ShopRed}" />
+        <Setter Property="MinimumHeightRequest" Value="44" />
+        <Setter Property="Padding" Value="12,8" />
+        <Setter Property="FontSize" Value="13" />
+
+    </Style>
+
+    <!-- CAMPOS -->
+
+    <Style TargetType="Entry">
+
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="TextColor" Value="{StaticResource ShopInk}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource ShopMutedColor}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="MinimumHeightRequest" Value="48" />
+
+    </Style>
+
+    <Style TargetType="Picker">
+
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="TextColor" Value="{StaticResource ShopInk}" />
+        <Setter Property="TitleColor" Value="{StaticResource ShopMutedColor}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="MinimumHeightRequest" Value="48" />
+
+    </Style>
+
+    <!-- CARTÕES E CONTORNOS -->
+
+    <Style
+        x:Key="ShopCard"
+        TargetType="Border">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource ShopSurface}" />
+        <Setter Property="Stroke" Value="{StaticResource ShopLine}" />
+        <Setter Property="StrokeThickness" Value="1" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 18" />
+        <Setter Property="Padding" Value="18" />
+
+    </Style>
+
+    <Style
+        x:Key="ShopInput"
+        TargetType="Border">
+
+        <Setter Property="BackgroundColor" Value="#F8FAFC" />
+        <Setter Property="Stroke" Value="#CBD5E1" />
+        <Setter Property="StrokeThickness" Value="1" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+        <Setter Property="Padding" Value="12,1" />
+
+    </Style>
+
+    <!-- STATUS DO PEDIDO -->
+
+    <Style
+        x:Key="ShopStatusBadge"
+        TargetType="Border">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource ShopBlueSoft}" />
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 10" />
+        <Setter Property="Padding" Value="10,7" />
+        <Setter Property="HorizontalOptions" Value="Start" />
+
+        <Style.Triggers>
+
+            <DataTrigger
+                TargetType="Border"
+                Binding="{Binding Status}"
+                Value="Cancelado">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource ShopRedSoft}" />
+
+            </DataTrigger>
+
+            <DataTrigger
+                TargetType="Border"
+                Binding="{Binding Status}"
+                Value="Concluído">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource ShopGreenSoft}" />
+
+            </DataTrigger>
+
+            <DataTrigger
+                TargetType="Border"
+                Binding="{Binding Status}"
+                Value="Pedido Confirmado">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource ShopGreenSoft}" />
+
+            </DataTrigger>
+
+        </Style.Triggers>
+
+    </Style>
+
+    <Style
+        x:Key="ShopStatusText"
+        TargetType="Label"
+        BasedOn="{StaticResource ShopLabel}">
+
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="TextColor" Value="{StaticResource ShopBlue}" />
+
+        <Style.Triggers>
+
+            <DataTrigger
+                TargetType="Label"
+                Binding="{Binding Status}"
+                Value="Cancelado">
+
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ShopRed}" />
+
+            </DataTrigger>
+
+            <DataTrigger
+                TargetType="Label"
+                Binding="{Binding Status}"
+                Value="Concluído">
+
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ShopGreen}" />
+
+            </DataTrigger>
+
+            <DataTrigger
+                TargetType="Label"
+                Binding="{Binding Status}"
+                Value="Pedido Confirmado">
+
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ShopGreen}" />
+
+            </DataTrigger>
+
+        </Style.Triggers>
+
+    </Style>
+
+    <!-- ÍCONES VETORIAIS -->
+
+    <Style
+        x:Key="ShopIcon"
+        TargetType="Path">
+
+        <Setter Property="Stroke" Value="{StaticResource ShopBlue}" />
+        <Setter Property="StrokeThickness" Value="1.7" />
+        <Setter Property="Fill" Value="Transparent" />
+        <Setter Property="Aspect" Value="Uniform" />
+        <Setter Property="WidthRequest" Value="32" />
+        <Setter Property="HeightRequest" Value="32" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+
+    </Style>
+
+</ResourceDictionary>

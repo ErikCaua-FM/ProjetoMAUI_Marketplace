@@ -1,0 +1,566 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmcarrinho.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmcarrinho.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmlistarprodutos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmlistarprodutos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmpedidos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmpedidos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmcadastro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmcadastro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\helpers\\sqlitedatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:helpers\\sqlitedatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\itenspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\itenspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\helpers\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:helpers\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\pedidoresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\pedidoresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\pedidosresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\pedidosresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\catalogoresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\catalogoresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\tokenresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\tokenresposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\helpers\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:helpers\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\helpers\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:helpers\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmcarrinho.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmcarrinho.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\itemcarrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\itemcarrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmlistarprodutos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmlistarprodutos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmcadastro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmcadastro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmpedidos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmpedidos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\resources\\styles\\vandershop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:resources\\styles\\vandershop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmdetalhespedido.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmdetalhespedido.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\views\\frmdetalhespedido.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:views\\frmdetalhespedido.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\dinheiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\dinheiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\opcoescompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\opcoescompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\statuspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\statuspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|d:\\projetos em maui\\2 bim\\vandershop\\vandershop.mobile\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9BEE9ED-3D86-B381-231B-A88BD4CE32FF}|VanderShop.csproj|solutionrelative:models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 31,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-10-12T18:59:45.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiService.cs",
+              "RelativeDocumentMoniker": "Helpers\\ApiService.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiService.cs",
+              "RelativeToolTip": "Helpers\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:50:05.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PedidoResposta.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\PedidoResposta.cs",
+              "RelativeDocumentMoniker": "Models\\PedidoResposta.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\PedidoResposta.cs",
+              "RelativeToolTip": "Models\\PedidoResposta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:49:47.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PedidosResposta.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\PedidosResposta.cs",
+              "RelativeDocumentMoniker": "Models\\PedidosResposta.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\PedidosResposta.cs",
+              "RelativeToolTip": "Models\\PedidosResposta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:49:30.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CatalogoResposta.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\CatalogoResposta.cs",
+              "RelativeDocumentMoniker": "Models\\CatalogoResposta.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\CatalogoResposta.cs",
+              "RelativeToolTip": "Models\\CatalogoResposta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:49:16.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TokenResposta.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\TokenResposta.cs",
+              "RelativeDocumentMoniker": "Models\\TokenResposta.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\TokenResposta.cs",
+              "RelativeToolTip": "Models\\TokenResposta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:49:02.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApiException.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiException.cs",
+              "RelativeDocumentMoniker": "Helpers\\ApiException.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiException.cs",
+              "RelativeToolTip": "Helpers\\ApiException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:48:39.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApiConfig.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiConfig.cs",
+              "RelativeDocumentMoniker": "Helpers\\ApiConfig.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\ApiConfig.cs",
+              "RelativeToolTip": "Helpers\\ApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:48:13.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmLogin.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmLogin.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmLogin.xaml.cs",
+              "RelativeToolTip": "Views\\frmLogin.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAtwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:50:59.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmLogin.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmLogin.xaml",
+              "RelativeDocumentMoniker": "Views\\frmLogin.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmLogin.xaml",
+              "RelativeToolTip": "Views\\frmLogin.xaml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:50:50.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VanderShop.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Resources\\Styles\\VanderShop.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\VanderShop.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Resources\\Styles\\VanderShop.xaml",
+              "RelativeToolTip": "Resources\\Styles\\VanderShop.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:49:18.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmDetalhesPedido.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmDetalhesPedido.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmDetalhesPedido.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmDetalhesPedido.xaml.cs",
+              "RelativeToolTip": "Views\\frmDetalhesPedido.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:18:48.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmDetalhesPedido.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmDetalhesPedido.xaml",
+              "RelativeDocumentMoniker": "Views\\frmDetalhesPedido.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmDetalhesPedido.xaml",
+              "RelativeToolTip": "Views\\frmDetalhesPedido.xaml",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAwwOkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:18:41.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCarrinho.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCarrinho.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmCarrinho.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCarrinho.xaml.cs",
+              "RelativeToolTip": "Views\\frmCarrinho.xaml.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAAABMBAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:18:27.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmCarrinho.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCarrinho.xaml",
+              "RelativeDocumentMoniker": "Views\\frmCarrinho.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCarrinho.xaml",
+              "RelativeToolTip": "Views\\frmCarrinho.xaml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:18:17.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmListarProdutos.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmListarProdutos.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmListarProdutos.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmListarProdutos.xaml.cs",
+              "RelativeToolTip": "Views\\frmListarProdutos.xaml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:18:01.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmListarProdutos.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmListarProdutos.xaml",
+              "RelativeDocumentMoniker": "Views\\frmListarProdutos.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmListarProdutos.xaml",
+              "RelativeToolTip": "Views\\frmListarProdutos.xaml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAwwKIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:17:58.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmCadastro.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCadastro.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadastro.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCadastro.xaml.cs",
+              "RelativeToolTip": "Views\\frmCadastro.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:17:43.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmCadastro.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCadastro.xaml",
+              "RelativeDocumentMoniker": "Views\\frmCadastro.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmCadastro.xaml",
+              "RelativeToolTip": "Views\\frmCadastro.xaml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:17:37.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmPedidos.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmPedidos.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\frmPedidos.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmPedidos.xaml.cs",
+              "RelativeToolTip": "Views\\frmPedidos.xaml.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAIwJIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:17:07.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmPedidos.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmPedidos.xaml",
+              "RelativeDocumentMoniker": "Views\\frmPedidos.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Views\\frmPedidos.xaml",
+              "RelativeToolTip": "Views\\frmPedidos.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:17:01.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:16:10.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwLoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:15:54.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-11T19:15:50.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SQLiteDatabaseHelper.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\SQLiteDatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\SQLiteDatabaseHelper.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Helpers\\SQLiteDatabaseHelper.cs",
+              "RelativeToolTip": "Helpers\\SQLiteDatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:15:25.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Dinheiro.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Dinheiro.cs",
+              "RelativeDocumentMoniker": "Models\\Dinheiro.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Dinheiro.cs",
+              "RelativeToolTip": "Models\\Dinheiro.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:01:43.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OpcoesCompra.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\OpcoesCompra.cs",
+              "RelativeDocumentMoniker": "Models\\OpcoesCompra.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\OpcoesCompra.cs",
+              "RelativeToolTip": "Models\\OpcoesCompra.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:01:18.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StatusPedido.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\StatusPedido.cs",
+              "RelativeDocumentMoniker": "Models\\StatusPedido.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\StatusPedido.cs",
+              "RelativeToolTip": "Models\\StatusPedido.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:01:00.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ItemCarrinho.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\ItemCarrinho.cs",
+              "RelativeDocumentMoniker": "Models\\ItemCarrinho.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\ItemCarrinho.cs",
+              "RelativeToolTip": "Models\\ItemCarrinho.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:00:36.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItensPedido.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\ItensPedido.cs",
+              "RelativeDocumentMoniker": "Models\\ItensPedido.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\ItensPedido.cs",
+              "RelativeToolTip": "Models\\ItensPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:00:19.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Usuarios.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T18:59:08.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pedidos.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Pedidos.cs",
+              "RelativeDocumentMoniker": "Models\\Pedidos.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Pedidos.cs",
+              "RelativeToolTip": "Models\\Pedidos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T18:06:09.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "Models\\Produtos.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Produtos.cs",
+              "RelativeToolTip": "Models\\Produtos.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA6wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T18:02:01.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Categorias.cs",
+              "RelativeDocumentMoniker": "Models\\Categorias.cs",
+              "ToolTip": "D:\\Projetos em MAUI\\2 BIM\\VanderShop\\VanderShop.Mobile\\Models\\Categorias.cs",
+              "RelativeToolTip": "Models\\Categorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T18:01:37.82Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

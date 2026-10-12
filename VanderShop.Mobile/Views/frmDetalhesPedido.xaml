@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:VanderShop.Models"
+    x:Class="VanderShop.Views.frmDetalhesPedido"
+    x:DataType="models:Pedidos"
+    Title="Detalhes do pedido"
+    SafeAreaEdges="Container">
+
+    <ScrollView>
+
+        <Grid
+            Padding="20"
+            RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+            RowSpacing="18">
+
+
+            <Border Style="{StaticResource ShopCard}">
+
+                <Grid
+                    RowDefinitions="Auto,Auto"
+                    RowSpacing="16">
+
+                    <Grid
+                        ColumnDefinitions="54,*"
+                        ColumnSpacing="14">
+
+                        <Border
+                            HeightRequest="54"
+                            BackgroundColor="{StaticResource ShopBlueSoft}"
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 16">
+
+                            <Path
+                                Style="{StaticResource ShopIcon}"
+                                Data="M5,2 L19,2 L19,22 L16,20 L12,22 L8,20 L5,22 Z M8,7 L16,7 M8,11 L16,11 M8,15 L13,15" />
+
+                        </Border>
+
+                        <Grid
+                            Grid.Column="1"
+                            RowDefinitions="Auto,Auto"
+                            RowSpacing="5">
+
+                            <Label
+                                Text="{Binding Titulo}"
+                                FontSize="24"
+                                FontFamily="OpenSansSemibold" />
+
+                            <Label
+                                Grid.Row="1"
+                                Text="{Binding DataHoraTexto}"
+                                Style="{StaticResource ShopMuted}" />
+
+                        </Grid>
+
+                    </Grid>
+
+                    <Border
+                        Grid.Row="1"
+                        Style="{StaticResource ShopStatusBadge}">
+
+                        <Label
+                            Text="{Binding Status}"
+                            Style="{StaticResource ShopStatusText}" />
+
+                    </Border>
+
+                </Grid>
+
+            </Border>
+
+
+            <Grid
+                Grid.Row="1"
+                RowDefinitions="Auto,Auto"
+                RowSpacing="12">
+
+                <Label
+                    Text="O que você comprou"
+                    Style="{StaticResource ShopSection}" />
+
+                <VerticalStackLayout
+                    x:Name="listaItens"
+                    Grid.Row="1"
+                    Spacing="12">
+
+                    <BindableLayout.ItemTemplate>
+
+                        <DataTemplate x:DataType="models:ItensPedido">
+
+                            <Border Style="{StaticResource ShopCard}">
+
+                                <Grid
+                                    RowDefinitions="Auto,Auto,Auto"
+                                    RowSpacing="10">
+
+                                    <Label
+                                        Text="{Binding NomeProduto}"
+                                        FontFamily="OpenSansSemibold"
+                                        FontSize="17" />
+
+                                    <Grid
+                                        Grid.Row="1"
+                                        RowDefinitions="Auto,Auto"
+                                        RowSpacing="4">
+
+                                        <Label
+                                            Text="{Binding Quantidade,
+                                                StringFormat='Quantidade: {0}'}"
+                                            Style="{StaticResource ShopMuted}" />
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Text="{Binding PrecoUnitarioTexto,
+                                                StringFormat='Preço unitário: {0}'}"
+                                            Style="{StaticResource ShopMuted}" />
+
+                                    </Grid>
+
+                                    <Label
+                                        Grid.Row="2"
+                                        Text="{Binding SubtotalTexto}"
+                                        TextColor="{StaticResource ShopBlue}"
+                                        FontFamily="OpenSansSemibold"
+                                        FontSize="21"
+                                        HorizontalTextAlignment="End" />
+
+                                </Grid>
+
+                            </Border>
+
+                        </DataTemplate>
+
+                    </BindableLayout.ItemTemplate>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+            <Border
+                Grid.Row="2"
+                Style="{StaticResource ShopCard}">
+
+                <Grid
+                    RowDefinitions="Auto,Auto,Auto"
+                    RowSpacing="10">
+
+                    <Label
+                        Text="Recebimento"
+                        Style="{StaticResource ShopSection}" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="{Binding FormaRecebimento}"
+                        FontFamily="OpenSansSemibold" />
+
+                    <Label
+                        Grid.Row="2"
+                        Text="{Binding EnderecoTexto}"
+                        Style="{StaticResource ShopMuted}" />
+
+                </Grid>
+
+            </Border>
+
+
+            <Border
+                Grid.Row="3"
+                Style="{StaticResource ShopCard}">
+
+                <Grid
+                    RowDefinitions="Auto,Auto"
+                    RowSpacing="10">
+
+                    <Label
+                        Text="Forma de pagamento"
+                        Style="{StaticResource ShopSection}" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="{Binding FormaPagamento}" />
+
+                </Grid>
+
+            </Border>
+
+
+            <Border
+                Grid.Row="4"
+                BackgroundColor="{StaticResource ShopBlue}"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 18"
+                Padding="20">
+
+                <Grid
+                    RowDefinitions="Auto,Auto,Auto"
+                    RowSpacing="8">
+
+                    <Label
+                        Text="Total do pedido"
+                        TextColor="White"
+                        FontSize="14" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="{Binding TotalTexto}"
+                        TextColor="White"
+                        FontFamily="OpenSansSemibold"
+                        FontSize="30" />
+
+                    <Label
+                        Grid.Row="2"
+                        Text="Frete grátis"
+                        TextColor="White"
+                        FontSize="13" />
+
+                </Grid>
+
+            </Border>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,6 @@
+@VanderShop.Api_HostAddress = http://localhost:5120
+
+GET {{VanderShop.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

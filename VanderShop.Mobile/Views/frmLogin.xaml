@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VanderShop.Views.frmLogin"
+    Title="Entrar"
+    SafeAreaEdges="Container">
+
+    <ScrollView>
+
+        <Grid
+            RowDefinitions="Auto,Auto"
+            RowSpacing="20"
+            Padding="0,0,0,24">
+
+            <Grid
+                BackgroundColor="{StaticResource ShopYellow}"
+                Padding="24,16,24,28"
+                RowDefinitions="Auto,Auto,Auto"
+                RowSpacing="10">
+
+                <Label
+                    Text="VanderShop"
+                    FontSize="23"
+                    FontFamily="OpenSansSemibold" />
+
+                <Label
+                    Grid.Row="1"
+                    Text="Entre para continuar"
+                    Style="{StaticResource ShopTitle}" />
+
+                <Label
+                    Grid.Row="2"
+                    Text="Acesse sua conta para fazer e acompanhar seus pedidos." />
+
+            </Grid>
+
+            <Border
+                Grid.Row="1"
+                Margin="20,0"
+                Style="{StaticResource ShopCard}">
+
+                <Grid
+                    x:Name="formulario"
+                    RowDefinitions="Auto,Auto,Auto,Auto"
+                    RowSpacing="20">
+
+                    <Grid
+                        RowDefinitions="Auto,Auto"
+                        RowSpacing="7">
+
+                        <Label
+                            Text="E-mail"
+                            Style="{StaticResource ShopFieldLabel}" />
+
+                        <Border
+                            Grid.Row="1"
+                            Style="{StaticResource ShopInput}">
+
+                            <Entry
+                                x:Name="txtEmail"
+                                Placeholder="Seu e-mail"
+                                Keyboard="Email"
+                                IsSpellCheckEnabled="False"
+                                MaxLength="150" />
+
+                        </Border>
+
+                    </Grid>
+
+                    <Grid
+                        Grid.Row="1"
+                        RowDefinitions="Auto,Auto"
+                        RowSpacing="7">
+
+                        <Label
+                            Text="Senha"
+                            Style="{StaticResource ShopFieldLabel}" />
+
+                        <Border
+                            Grid.Row="1"
+                            Style="{StaticResource ShopInput}">
+
+                            <Entry
+                                x:Name="txtSenha"
+                                Placeholder="Sua senha"
+                                IsPassword="True"
+                                MaxLength="128"
+                                ReturnType="Go"
+                                Completed="Entrar_Clicked" />
+
+                        </Border>
+
+                    </Grid>
+
+                    <Button
+                        x:Name="btnEntrar"
+                        Grid.Row="2"
+                        Text="Entrar"
+                        Clicked="Entrar_Clicked" />
+
+                    <Grid
+                        Grid.Row="3"
+                        RowDefinitions="Auto,Auto"
+                        RowSpacing="2">
+
+                        <Label
+                            Text="Ainda não tem uma conta?"
+                            Style="{StaticResource ShopMuted}"
+                            HorizontalTextAlignment="Center" />
+
+                        <Label
+                            Grid.Row="1"
+                            Text="Criar minha conta"
+                            Style="{StaticResource ShopLink}"
+                            SemanticProperties.Hint="Abre o formulário de cadastro">
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="CriarConta_Tapped" />
+                            </Label.GestureRecognizers>
+
+                        </Label>
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes do pedido | VanderShop</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/pedido.js"></script>
+</head>
+<body>
+  <header class="cabecalho"><div class="cabecalho-conteudo">
+    <a class="marca" href="index.html">vander<span>Shop</span></a><span class="identificacao">Pedidos</span>
+  </div></header>
+  <main class="container detalhes-container">
+    <p class="sobretitulo">DETALHES DA COMPRA</p><h1 id="titulo-pagina">Pedido</h1>
+    <p id="data-pedido" class="muted"></p>
+    <p id="mensagem" class="mensagem" role="status" hidden></p>
+    <div id="conteudo-pedido" hidden>
+      <section class="card formulario">
+        <h2>Cliente</h2><p id="cliente" class="destaque"></p><p id="contato" class="muted"></p>
+      </section>
+      <section class="card">
+        <div class="card-cabecalho"><h2>Itens do pedido</h2></div>
+        <div class="tabela-container"><table>
+          <caption class="sr-only">Produtos comprados</caption>
+          <thead><tr><th scope="col">Produto</th><th scope="col" class="numero">Qtd.</th>
+            <th scope="col" class="numero">Unitário</th><th scope="col" class="numero">Subtotal</th></tr></thead>
+          <tbody id="lista-itens"></tbody>
+        </table></div>
+      </section>
+      <div class="resumo-grid">
+        <section class="card formulario"><h2>Recebimento</h2><p id="recebimento" class="destaque"></p>
+          <p id="endereco" class="muted endereco"></p><span class="badge verde">Frete grátis</span></section>
+        <section class="card formulario"><h2>Pagamento</h2><p id="pagamento" class="destaque"></p></section>
+      </div>
+      <div class="total-pedido"><span>Total do pedido</span><strong id="total-pedido"></strong></div>
+      <form id="form-status" class="card formulario">
+        <fieldset id="campos" disabled>
+          <div class="campo"><label for="status">Status do pedido</label><select id="status" required></select></div>
+          <div class="rodape-formulario">
+            <button type="button" class="botao secundario" data-voltar>Fechar</button>
+            <button id="salvar" type="submit" class="botao" hidden>Salvar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

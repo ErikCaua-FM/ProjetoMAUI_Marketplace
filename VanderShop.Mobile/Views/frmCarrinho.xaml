@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:VanderShop.Models"
+    x:Class="VanderShop.Views.frmCarrinho"
+    Title="Meu carrinho"
+    SafeAreaEdges="Container">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <ScrollView>
+
+            <Grid
+                x:Name="conteudo"
+                Padding="20"
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                RowSpacing="18">
+
+                <Grid
+                    RowDefinitions="Auto,Auto"
+                    RowSpacing="5">
+
+                    <Label
+                        Text="Revise sua compra"
+                        Style="{StaticResource ShopTitle}"
+                        FontSize="25" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="Confira seus produtos e escolha como receber."
+                        Style="{StaticResource ShopMuted}" />
+
+                </Grid>
+
+
+                <Border
+                    x:Name="lblVazio"
+                    Grid.Row="1"
+                    Style="{StaticResource ShopCard}"
+                    IsVisible="False">
+
+                    <Grid
+                        RowDefinitions="Auto,Auto"
+                        RowSpacing="14"
+                        Padding="8">
+
+                        <Path
+                            Style="{StaticResource ShopIcon}"
+                            WidthRequest="42"
+                            HeightRequest="42"
+                            Data="M5,7 L19,7 L21,22 L3,22 Z M8,8 L8,5 A4,4 0 0 1 16,5 L16,8" />
+
+                        <Label
+                            Grid.Row="1"
+                            Text="Seu carrinho está vazio."
+                            Style="{StaticResource ShopSection}"
+                            HorizontalTextAlignment="Center" />
+
+                    </Grid>
+
+                </Border>
+
+
+                <VerticalStackLayout
+                    x:Name="listaCarrinho"
+                    Grid.Row="2"
+                    Spacing="14">
+
+                    <BindableLayout.ItemTemplate>
+
+                        <DataTemplate x:DataType="models:ItemCarrinho">
+
+                            <Border Style="{StaticResource ShopCard}">
+
+                                <Grid
+                                    RowDefinitions="Auto,Auto,Auto,Auto"
+                                    RowSpacing="14">
+
+                                    <Grid
+                                        ColumnDefinitions="48,*"
+                                        ColumnSpacing="12">
+
+                                        <Border
+                                            HeightRequest="48"
+                                            BackgroundColor="{StaticResource ShopBlueSoft}"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 12">
+
+                                            <Path
+                                                Style="{StaticResource ShopIcon}"
+                                                WidthRequest="26"
+                                                HeightRequest="26"
+                                                Data="M12,2 L22,7 L22,17 L12,22 L2,17 L2,7 Z M2,7 L12,12 L22,7 M12,12 L12,22" />
+
+                                        </Border>
+
+                                        <Grid
+                                            Grid.Column="1"
+                                            RowDefinitions="Auto,Auto"
+                                            RowSpacing="5">
+
+                                            <Label
+                                                Text="{Binding oProduto.Produto}"
+                                                FontFamily="OpenSansSemibold"
+                                                FontSize="17" />
+
+                                            <Label
+                                                Grid.Row="1"
+                                                Text="{Binding PrecoUnitarioTexto,
+                                                    StringFormat='{0} por unidade'}"
+                                                Style="{StaticResource ShopMuted}" />
+
+                                        </Grid>
+
+                                    </Grid>
+
+                                    <Grid
+                                        Grid.Row="1"
+                                        ColumnDefinitions="44,60,44"
+                                        ColumnSpacing="8"
+                                        HorizontalOptions="Start">
+
+                                        <Button
+                                            Text="-"
+                                            Style="{StaticResource ShopCounter}"
+                                            Clicked="Diminuir_Clicked" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Text="{Binding Quantidade, Mode=OneWay}"
+                                            FontFamily="OpenSansSemibold"
+                                            FontSize="18"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center" />
+
+                                        <Button
+                                            Grid.Column="2"
+                                            Text="+"
+                                            Style="{StaticResource ShopCounter}"
+                                            Clicked="Aumentar_Clicked" />
+
+                                    </Grid>
+
+                                    <BoxView
+                                        Grid.Row="2"
+                                        HeightRequest="1"
+                                        Color="{StaticResource ShopLine}" />
+
+                                    <Grid
+                                        Grid.Row="3"
+                                        ColumnDefinitions="*,Auto"
+                                        ColumnSpacing="10">
+
+                                        <Grid
+                                            RowDefinitions="Auto,Auto"
+                                            RowSpacing="2">
+
+                                            <Label
+                                                Text="Subtotal"
+                                                Style="{StaticResource ShopMuted}"
+                                                FontSize="12" />
+
+                                            <Label
+                                                Grid.Row="1"
+                                                Text="{Binding SubtotalTexto, Mode=OneWay}"
+                                                FontSize="20"
+                                                FontFamily="OpenSansSemibold" />
+
+                                        </Grid>
+
+                                        <Button
+                                            Grid.Column="1"
+                                            Text="Remover"
+                                            Style="{StaticResource ShopRemove}"
+                                            VerticalOptions="Center"
+                                            Clicked="Remover_Clicked" />
+
+                                    </Grid>
+
+                                </Grid>
+
+                            </Border>
+
+                        </DataTemplate>
+
+                    </BindableLayout.ItemTemplate>
+
+                </VerticalStackLayout>
+
+                <Grid
+                    Grid.Row="3"
+                    RowDefinitions="Auto,Auto"
+                    RowSpacing="18">
+
+                    <Grid.Triggers>
+
+                        <DataTrigger
+                            TargetType="Grid"
+                            Binding="{Binding Source={x:Reference lblVazio},
+                                Path=IsVisible}"
+                            Value="True">
+
+                            <Setter Property="IsVisible" Value="False" />
+
+                        </DataTrigger>
+
+                    </Grid.Triggers>
+
+                    <Border Style="{StaticResource ShopCard}">
+
+                        <Grid
+                            RowDefinitions="Auto,Auto,Auto"
+                            RowSpacing="12">
+
+                            <Label
+                                Text="Pagamento"
+                                Style="{StaticResource ShopSection}" />
+
+                            <Label
+                                Grid.Row="1"
+                                Text="Escolha sua forma de pagamento."
+                                Style="{StaticResource ShopMuted}" />
+
+                            <Border
+                                Grid.Row="2"
+                                Style="{StaticResource ShopInput}">
+
+                                <Picker
+                                    x:Name="pickerPagamento"
+                                    Title="Selecione uma opção" />
+
+                            </Border>
+
+                        </Grid>
+
+                    </Border>
+
+                    <Border
+                        Grid.Row="1"
+                        Style="{StaticResource ShopCard}">
+
+                        <Grid
+                            RowDefinitions="Auto,Auto,Auto,Auto"
+                            RowSpacing="14">
+
+                            <Label
+                                Text="Como você quer receber?"
+                                Style="{StaticResource ShopSection}" />
+
+                            <Border
+                                Grid.Row="1"
+                                Style="{StaticResource ShopInput}">
+
+                                <Picker
+                                    x:Name="pickerRecebimento"
+                                    Title="Entrega ou retirada"
+                                    SelectedIndexChanged="Recebimento_Changed" />
+
+                            </Border>
+
+                            <Border
+                                Grid.Row="2"
+                                BackgroundColor="{StaticResource ShopGreenSoft}"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 10"
+                                Padding="12,10">
+
+                                <Label
+                                    Text="Frete grátis para sua compra"
+                                    TextColor="{StaticResource ShopGreen}"
+                                    FontFamily="OpenSansSemibold"
+                                    FontSize="13" />
+
+                            </Border>
+
+                            <Grid
+                                x:Name="camposEndereco"
+                                Grid.Row="3"
+                                RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                                RowSpacing="14"
+                                IsVisible="False">
+
+                                <Label
+                                    Text="Endereço de entrega"
+                                    FontFamily="OpenSansSemibold"
+                                    FontSize="16" />
+
+                                <Grid
+                                    Grid.Row="1"
+                                    ColumnDefinitions="2*,*"
+                                    ColumnSpacing="12">
+
+                                    <Grid
+                                        RowDefinitions="Auto,Auto"
+                                        RowSpacing="7">
+
+                                        <Label
+                                            Text="CEP"
+                                            Style="{StaticResource ShopFieldLabel}" />
+
+                                        <Border
+                                            Grid.Row="1"
+                                            Style="{StaticResource ShopInput}">
+
+                                            <Entry
+                                                x:Name="txtCEP"
+                                                Placeholder="00000-000"
+                                                Keyboard="Telephone"
+                                                MaxLength="9" />
+
+                                        </Border>
+
+                                    </Grid>
+
+                                    <Grid
+                                        Grid.Column="1"
+                                        RowDefinitions="Auto,Auto"
+                                        RowSpacing="7">
+
+                                        <Label
+                                            Text="Número"
+                                            Style="{StaticResource ShopFieldLabel}" />
+
+                                        <Border
+                                            Grid.Row="1"
+                                            Style="{StaticResource ShopInput}">
+
+                                            <Entry
+                                                x:Name="txtNumero"
+                                                Placeholder="Nº"
+                                                MaxLength="10" />
+
+                                        </Border>
+
+                                    </Grid>
+
+                                </Grid>
+
+                                <Grid
+                                    Grid.Row="2"
+                                    RowDefinitions="Auto,Auto"
+                                    RowSpacing="7">
+
+                                    <Label
+                                        Text="Rua"
+                                        Style="{StaticResource ShopFieldLabel}" />
+
+                                    <Border
+                                        Grid.Row="1"
+                                        Style="{StaticResource ShopInput}">
+
+                                        <Entry
+                                            x:Name="txtRua"
+                                            Placeholder="Nome da rua"
+                                            MaxLength="100" />
+
+                                    </Border>
+
+                                </Grid>
+
+                                <Grid
+                                    Grid.Row="3"
+                                    RowDefinitions="Auto,Auto"
+                                    RowSpacing="7">
+
+                                    <Label
+                                        Text="Bairro"
+                                        Style="{StaticResource ShopFieldLabel}" />
+
+                                    <Border
+                                        Grid.Row="1"
+                                        Style="{StaticResource ShopInput}">
+
+                                        <Entry
+                                            x:Name="txtBairro"
+                                            Placeholder="Seu bairro"
+                                            MaxLength="60" />
+
+                                    </Border>
+
+                                </Grid>
+
+                                <Grid
+                                    Grid.Row="4"
+                                    RowDefinitions="Auto,Auto"
+                                    RowSpacing="7">
+
+                                    <Label
+                                        Text="Complemento"
+                                        Style="{StaticResource ShopFieldLabel}" />
+
+                                    <Border
+                                        Grid.Row="1"
+                                        Style="{StaticResource ShopInput}">
+
+                                        <Entry
+                                            x:Name="txtComplemento"
+                                            Placeholder="Apartamento, bloco… opcional"
+                                            MaxLength="100" />
+
+                                    </Border>
+
+                                </Grid>
+
+                            </Grid>
+
+                        </Grid>
+
+                    </Border>
+
+                </Grid>
+
+            </Grid>
+
+        </ScrollView>
+
+
+        <Border
+            Grid.Row="1"
+            Padding="20,14"
+            BackgroundColor="White"
+            Stroke="{StaticResource ShopLine}"
+            StrokeThickness="1">
+
+            <Grid
+                RowDefinitions="Auto,Auto"
+                RowSpacing="12">
+
+                <Label
+                    x:Name="lblTotal"
+                    Text="Total: R$ 0,00"
+                    FontSize="23"
+                    FontFamily="OpenSansSemibold" />
+
+                <Button
+                    x:Name="btnFinalizar"
+                    Grid.Row="1"
+                    Text="Finalizar Compra"
+                    IsEnabled="False"
+                    Clicked="Finalizar_Clicked" />
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+
+</ContentPage>

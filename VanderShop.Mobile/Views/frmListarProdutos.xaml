@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:VanderShop.Models"
+    x:Class="VanderShop.Views.frmListaProdutos"
+    Title="Produtos"
+    SafeAreaEdges="Container">
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem
+            x:Name="menuCarrinho"
+            Text="Carrinho"
+            Order="Primary"
+            Priority="0"
+            Clicked="Carrinho_Clicked" />
+
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto,*">
+
+
+        <Grid
+            Padding="20,12,20,22"
+            BackgroundColor="{StaticResource ShopYellow}"
+            RowDefinitions="Auto,Auto,Auto"
+            RowSpacing="14">
+
+            <Label
+                Text="O que você procura hoje?"
+                FontSize="23"
+                FontFamily="OpenSansSemibold" />
+
+            <Border
+                Grid.Row="1"
+                BackgroundColor="White"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 14"
+                Padding="14,5">
+
+                <Grid
+                    RowDefinitions="Auto,Auto"
+                    RowSpacing="0">
+
+                    <Label
+                        Text="CATEGORIA"
+                        FontSize="10"
+                        CharacterSpacing="1"
+                        TextColor="{StaticResource ShopMutedColor}" />
+
+                    <Picker
+                        x:Name="pickerCategoria"
+                        Grid.Row="1"
+                        Title="Escolha uma categoria"
+                        ItemDisplayBinding="{Binding Categoria}"
+                        SelectedIndexChanged="Categoria_Changed" />
+
+                </Grid>
+
+            </Border>
+
+            <Label
+                Grid.Row="2"
+                Text="Frete grátis ou retirada na loja"
+                FontFamily="OpenSansSemibold"
+                FontSize="13" />
+
+        </Grid>
+
+
+        <CollectionView
+            x:Name="listaProdutos"
+            Grid.Row="1"
+            Margin="20,18"
+            SelectionMode="Single"
+            SelectionChanged="Produto_Selecionado">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout
+                    Orientation="Vertical"
+                    ItemSpacing="14" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.EmptyView>
+
+                <Grid Padding="24">
+
+                    <Label
+                        Text="Nenhum produto encontrado nesta categoria."
+                        Style="{StaticResource ShopMuted}"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate x:DataType="models:Produtos">
+
+                    <Border
+                        Style="{StaticResource ShopCard}"
+                        Padding="16">
+
+                        <Grid
+                            RowDefinitions="Auto,Auto"
+                            ColumnDefinitions="72,*"
+                            ColumnSpacing="14"
+                            RowSpacing="14">
+
+                            <Border
+                                WidthRequest="72"
+                                HeightRequest="82"
+                                VerticalOptions="Start"
+                                BackgroundColor="{StaticResource ShopBlueSoft}"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 16">
+
+                                <Path
+                                    Style="{StaticResource ShopIcon}"
+                                    WidthRequest="36"
+                                    HeightRequest="36"
+                                    Data="M12,2 L22,7 L22,17 L12,22 L2,17 L2,7 Z M2,7 L12,12 L22,7 M12,12 L12,22 M7,4.5 L17,9.5" />
+
+                            </Border>
+
+                            <Grid
+                                Grid.Column="1"
+                                RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                                RowSpacing="6">
+
+                                <Label
+                                    Text="{Binding aCategoria.Categoria}"
+                                    Style="{StaticResource ShopMuted}"
+                                    FontSize="11" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Text="{Binding Produto}"
+                                    FontSize="18"
+                                    FontFamily="OpenSansSemibold" />
+
+                                <Label
+                                    Grid.Row="2"
+                                    Text="{Binding Descricao}"
+                                    Style="{StaticResource ShopMuted}"
+                                    MaxLines="2"
+                                    LineBreakMode="TailTruncation" />
+
+                                <Label
+                                    Grid.Row="3"
+                                    Text="{Binding PrecoTexto}"
+                                    FontSize="25"
+                                    FontFamily="OpenSansSemibold" />
+
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                RowDefinitions="Auto,Auto"
+                                RowSpacing="12">
+
+                                <BoxView
+                                    HeightRequest="1"
+                                    Color="{StaticResource ShopLine}" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Text="Escolher quantidade  ›"
+                                    TextColor="{StaticResource ShopBlue}"
+                                    FontFamily="OpenSansSemibold"
+                                    HorizontalTextAlignment="End" />
+
+                            </Grid>
+
+                        </Grid>
+
+                    </Border>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
